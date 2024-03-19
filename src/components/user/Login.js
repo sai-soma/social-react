@@ -28,7 +28,7 @@ const handleLogin=()=>{
     <div>
         <div className='body'>
         <div className="login-container">
-        <div>Login</div>
+        <div><h1>Login</h1></div>
         <input type='email' id='text1' className="login-input" placeholder='E-mail'></input><br></br>
         <input type='password' id='text2' className="login-input" placeholder='Password'></input><br></br>
         <button onClick={handleLogin} className="login-button">Login</button><br></br>

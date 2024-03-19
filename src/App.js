@@ -19,8 +19,8 @@ export default function App() {
         {flag ===2 && <Register/>}
         
         <Routes>
-            <Route path="/feeds" index element={<Feeds />}></Route>
-            <Route path="/post" element={<Albums />}></Route>
+            <Route path="/feeds" element={<Feeds />}></Route>
+            <Route path="/albums" element={<Albums />}></Route>
         </Routes>
         </Router>
         

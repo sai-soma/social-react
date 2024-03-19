@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react';
 
 export default function Feeds() {
   const [data,setData] = useState([]);
- const url ="https://jsonplaceholder.typicode.com/users"
+ const url ="https://jsonplaceholder.typicode.com/posts"
 
  const fetchData =async (url) => {
   try {
@@ -20,7 +20,7 @@ export default function Feeds() {
  },[])
   return (
     <div>
-      {data && data.map((v) => <div key={v.id}>{v.name}</div>)}
+      {data && data.map((v) => <div key={v.id}><b>{`${v.id})`}</b>{v.body}<br/><br/></div>)}
     </div>
   )
 }
