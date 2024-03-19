@@ -4,7 +4,7 @@ import Register from './Register'
 import './Login.css'
 
 export default function Login() {
-const {flag,setFlag ,users,setUsers,user,setUser,setName} =useContext(UserContext);
+const {flag,setFlag ,users,setUsers,user,setUser,setName, username, setUserName} =useContext(UserContext);
 const email =useState();
 const Password =useState();
 
@@ -15,7 +15,8 @@ const handleLogin=()=>{
     let logged =false;
     users.map((v) => {
         if((v.email === Email)&&(v.password === Password)){
-            setName(v.name)
+            setUserName(Email);
+            setName(v.name);
             setFlag(1);
             logged=true;
         }

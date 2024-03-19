@@ -6,11 +6,13 @@ import Login from './components/user/Login'
 import Register from './components/user/Register'
 import Feeds from './components/feeds/Feeds';
 import Albums from './components/albums/Albums';
+import Users from './components/user/Users';
+import Todos from './components/todos/Todos';
 
 
 // We should call login comp and register 
 export default function App() {
-    const  {flag, setFlag} =useContext(UserContext);
+    const  {flag, setFlag, name} =useContext(UserContext);
 
   return (
     <div>
@@ -19,8 +21,10 @@ export default function App() {
         {flag ===2 && <Register/>}
         
         <Routes>
-            <Route path="/feeds" element={<Feeds />}></Route>
+        <Route path="/feeds" element={<Feeds />}></Route>
             <Route path="/albums" element={<Albums />}></Route>
+            <Route path="/user" element={<Users />}></Route>
+            <Route path="/todos" element={<Todos />}></Route>
         </Routes>
         </Router>
         

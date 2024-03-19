@@ -11,6 +11,9 @@ function Home() {
         <div className='nav-links'>
             <Link to="/feeds">Feeds</Link>
             <Link to="/albums">Albums</Link>
+            <Link to="/user">Users</Link>
+            <Link to="/todos">Todos</Link>
+
         </div>
         <div className='user-info'>
             <div>Hello! {name} you have successfully Logged in </div>

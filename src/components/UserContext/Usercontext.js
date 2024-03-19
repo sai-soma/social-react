@@ -5,9 +5,10 @@ const Usercontext = (props) => {
     
     const [users,setUsers] = useState([]);
     const [user, setUser] = useState({name:'',email:'',password:''});
-    const [name,setName] =useState()
+    const [name,setName] =useState();
     const [flag,setFlag] =useState(0);
-    const val ={flag, setFlag , user,setUser ,users ,setUsers ,name, setName}
+    const [username, setUserName]= useState();
+    const val ={flag, setFlag , user,setUser ,users ,setUsers ,name, setName, username, setUserName}
   return (
     <div>
         <UserContext.Provider value={val}>
