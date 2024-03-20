@@ -2,10 +2,9 @@ import React, { useContext } from 'react'
 import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-
 export default function Albums() {
   const [data,setData] = useState([]);
- const url =`https://jsonplaceholder.typicode.com/albums`;
+  const url =`https://jsonplaceholder.typicode.com/albums/`;
 
  const fetchData =async (url) => {
   try {

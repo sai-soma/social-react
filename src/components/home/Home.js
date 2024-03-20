@@ -13,7 +13,6 @@ function Home() {
             <Link to="/albums">Albums</Link>
             <Link to="/user">Users</Link>
             <Link to="/todos">Todos</Link>
-
         </div>
         <div className='user-info'>
             <div>Hello! {name} you have successfully Logged in </div>
